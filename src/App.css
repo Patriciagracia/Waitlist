@@ -1,0 +1,100 @@
+body {
+  background-image: url("./assets/laptop.jpg");
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.container {
+  max-width: 670px !important;
+}
+#tag {
+  max-width: 17%;
+  margin: 0 auto;
+}
+.container h1 {
+  color: white;
+  font-size: 4.4rem;
+  font-weight: bold;
+  text-shadow: 0 0 18px #9fafd1;
+}
+.card {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 40px 40px 50px;
+  border-radius: 24px;
+  background-color: rgba(239, 239, 239, 0.865) !important;
+}
+.card h2 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+.social-icon-wrapper {
+  margin: 10px;
+}
+
+.alert {
+  margin: 0 auto 1rem auto;
+  background-color: black;
+  color: white;
+}
+
+.animation {
+  animation: fadeIn 2s ease-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  10% {
+    filter: blur(5px);
+  }
+}
+
+.github-icon,
+.linkedin-icon,
+.portfolio-icon {
+  animation: wiggle 5s linear;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.github-icon:hover,
+.linkedin-icon:hover,
+.portfolio-icon:hover {
+  transform: scale(1.2);
+}
+.github-icon,
+.linkedin-icon,
+.portfolio-icon {
+  transition: all 0.8s;
+  transform-origin: 50% 50%;
+}
